@@ -1,7 +1,7 @@
 ﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>9333b1ad-e1c1-4e11-8bf3-f04a8d7e20b8</ProjectGuid>
+    <ProjectGuid>92f93bde-43d9-43a3-bdbd-ec9adf19c3db</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -33,6 +33,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\ClassLibrary2\ClassLibrary2.csproj" />
     <ProjectReference Include="..\..\ClassLibraryCommon\ClassLibraryCommon.csproj" />
   </ItemGroup>
   <!--

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Preview3WebApplication1
+namespace Preview3WebApplication2
 {
     public class Startup
     {
@@ -23,6 +23,7 @@ namespace Preview3WebApplication1
         {
             loggerFactory.AddConsole();
             ClassLibraryCommon.Class1.returnInt();
+            ClassLibrary2.Class1.returnInt2();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -30,7 +31,7 @@ namespace Preview3WebApplication1
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Preview3WebApplication1!");
+                await context.Response.WriteAsync("Preview3WebApplication2!");
             });
         }
     }
